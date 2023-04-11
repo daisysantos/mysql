@@ -54,6 +54,8 @@ VALUES ("Filé Mignon", 70.00, 2, "S/Borda", "Delivery", "6");
 INSERT INTO tb_pizzas (sabor, valor, quantidade, borda, entrega, categoria_id)
 VALUES ("Tofu", 71.00, 1, "S/Borda", "Balcao",5);   
 
+UPDATE tb_pizzas SET borda = "S/Borda" WHERE id = 5;
+
 SELECT * FROM tb_pizzas; 
 
 SELECT * FROM tb_pizzas WHERE valor > 45.00;
